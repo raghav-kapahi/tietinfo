@@ -15,6 +15,7 @@ import 'package:syncfusion_flutter_charts/charts.dart';
 import 'package:syncfusion_flutter_charts/sparkcharts.dart';
 import 'package:slider_button/slider_button.dart';
 import 'package:url_launcher/url_launcher.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
   runApp(tietinfo());
@@ -169,7 +170,7 @@ class _hostelState extends State<hostels> {
                 'BOYS HOSTELS',
                 style: TextStyle(
                     fontFamily: 'ubn',
-                    fontWeight: FontWeight.w500,
+                    fontWeight: FontWeight.w600,
                     color: Colors.black,
                     fontSize: 40.0),
               ),
@@ -181,7 +182,7 @@ class _hostelState extends State<hostels> {
             Card(
               color: Color(0xffF5F7B2),
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(50)),
+                  borderRadius: BorderRadius.circular(30)),
               elevation: 20.0,
               child: ExpansionTile(
                 title: Text('HOSTEL M', style: textstyle),
@@ -266,7 +267,7 @@ class _hostelState extends State<hostels> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text(
-                          'Description: ',
+                          'DESCRIPTION: ',
                           style: headtext,
                           overflow: TextOverflow.ellipsis,
                         ),
@@ -277,7 +278,7 @@ class _hostelState extends State<hostels> {
                         Row(
                           children: [
                             Text('Capacity:   ', style: headtext),
-                            Text('1148 students', style: mytext),
+                            Text('1148 students', style: descctext),
                           ],
                         )
                       ],
@@ -292,7 +293,7 @@ class _hostelState extends State<hostels> {
             Card(
               color: Color(0xffF5F7B2),
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(50)),
+                  borderRadius: BorderRadius.circular(30)),
               elevation: 20.0,
               child: ExpansionTile(
                 title: Text('HOSTEL L', style: textstyle),
@@ -376,7 +377,7 @@ class _hostelState extends State<hostels> {
                         Row(
                           children: [
                             Text('Capacity:   ', style: headtext),
-                            Text('500-600 students', style: mytext),
+                            Text('500-600 students', style: descctext),
                           ],
                         )
                       ],
@@ -391,7 +392,7 @@ class _hostelState extends State<hostels> {
             Card(
               color: Color(0xffF5F7B2),
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(50)),
+                  borderRadius: BorderRadius.circular(30)),
               elevation: 20.0,
               child: ExpansionTile(
                 title: Text('HOSTEL K', style: textstyle),
@@ -474,7 +475,7 @@ class _hostelState extends State<hostels> {
                         Row(
                           children: [
                             Text('Capacity:   ', style: headtext),
-                            Text('500 students', style: mytext),
+                            Text('500 students', style: descctext),
                           ],
                         )
                       ],
@@ -489,7 +490,7 @@ class _hostelState extends State<hostels> {
             Card(
               color: Color(0xffF5F7B2),
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(50)),
+                  borderRadius: BorderRadius.circular(30)),
               elevation: 20.0,
               child: ExpansionTile(
                 title: Text('HOSTEL J', style: textstyle),
@@ -570,7 +571,7 @@ class _hostelState extends State<hostels> {
                         Row(
                           children: [
                             Text('Capacity:   ', style: headtext),
-                            Text('962 students', style: mytext),
+                            Text('962 students', style: descctext),
                           ],
                         )
                       ],
@@ -585,7 +586,7 @@ class _hostelState extends State<hostels> {
             Card(
               color: Color(0xffF5F7B2),
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(50)),
+                  borderRadius: BorderRadius.circular(30)),
               elevation: 20.0,
               child: ExpansionTile(
                 title: Text('HOSTEL H', style: textstyle),
@@ -681,7 +682,7 @@ class _hostelState extends State<hostels> {
                         Row(
                           children: [
                             Text('Capacity:   ', style: headtext),
-                            Text('480 students', style: mytext),
+                            Text('480 students', style: descctext),
                           ],
                         )
                       ],
@@ -696,7 +697,7 @@ class _hostelState extends State<hostels> {
             Card(
               color: Color(0xffF5F7B2),
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(50)),
+                  borderRadius: BorderRadius.circular(30)),
               elevation: 20.0,
               child: ExpansionTile(
                 title: Text('HOSTEL C', style: textstyle),
@@ -780,7 +781,7 @@ class _hostelState extends State<hostels> {
                         Row(
                           children: [
                             Text('Capacity:   ', style: headtext),
-                            Text('414 students', style: mytext),
+                            Text('414 students', style: descctext),
                           ],
                         )
                       ],
@@ -795,7 +796,7 @@ class _hostelState extends State<hostels> {
             Card(
               color: Color(0xffF5F7B2),
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(50)),
+                  borderRadius: BorderRadius.circular(30)),
               elevation: 20.0,
               child: ExpansionTile(
                 title: Text('HOSTEL B', style: textstyle),
@@ -879,7 +880,7 @@ class _hostelState extends State<hostels> {
                         Row(
                           children: [
                             Text('Capacity:   ', style: headtext),
-                            Text('200-400 students', style: mytext),
+                            Text('200-400 students', style: descctext),
                           ],
                         )
                       ],
@@ -894,7 +895,7 @@ class _hostelState extends State<hostels> {
             Card(
               color: Color(0xffF5F7B2),
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(50)),
+                  borderRadius: BorderRadius.circular(30)),
               elevation: 20.0,
               child: ExpansionTile(
                 title: Text('HOSTEL A', style: textstyle),
@@ -966,7 +967,7 @@ class _hostelState extends State<hostels> {
                         Row(
                           children: [
                             Text('Capacity:   ', style: headtext),
-                            Text('252 students', style: mytext),
+                            Text('252 students', style: descctext),
                           ],
                         )
                       ],
@@ -984,7 +985,7 @@ class _hostelState extends State<hostels> {
                 'GIRLS HOSTELS',
                 style: TextStyle(
                     fontFamily: 'ubn',
-                    fontWeight: FontWeight.w500,
+                    fontWeight: FontWeight.w600,
                     color: Colors.black,
                     fontSize: 40.0),
               ),
@@ -996,7 +997,7 @@ class _hostelState extends State<hostels> {
             Card(
               color: Color(0xffF5F7B2),
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(50)),
+                  borderRadius: BorderRadius.circular(30)),
               elevation: 20.0,
               child: ExpansionTile(
                 title: Text('HOSTEL N', style: textstyle),
@@ -1091,7 +1092,7 @@ class _hostelState extends State<hostels> {
                         Row(
                           children: [
                             Text('Capacity:   ', style: headtext),
-                            Text('499 students', style: mytext),
+                            Text('499 students', style: descctext),
                           ],
                         )
                       ],
@@ -1106,7 +1107,7 @@ class _hostelState extends State<hostels> {
             Card(
               color: Color(0xffF5F7B2),
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(50)),
+                  borderRadius: BorderRadius.circular(30)),
               elevation: 20.0,
               child: ExpansionTile(
                 title: Text('HOSTEL I', style: textstyle),
@@ -1194,7 +1195,7 @@ class _hostelState extends State<hostels> {
                         Row(
                           children: [
                             Text('Capacity:   ', style: headtext),
-                            Text('407 students', style: mytext),
+                            Text('407 students', style: descctext),
                           ],
                         )
                       ],
@@ -1209,7 +1210,7 @@ class _hostelState extends State<hostels> {
             Card(
               color: Color(0xffF5F7B2),
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(50)),
+                  borderRadius: BorderRadius.circular(30)),
               elevation: 20.0,
               child: ExpansionTile(
                 title: Text('HOSTEL PG', style: textstyle),
@@ -1297,7 +1298,7 @@ class _hostelState extends State<hostels> {
                         Row(
                           children: [
                             Text('Capacity:   ', style: headtext),
-                            Text('402 students', style: mytext),
+                            Text('402 students', style: descctext),
                           ],
                         )
                       ],
@@ -1312,7 +1313,7 @@ class _hostelState extends State<hostels> {
             Card(
               color: Color(0xffF5F7B2),
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(50)),
+                  borderRadius: BorderRadius.circular(30)),
               elevation: 20.0,
               child: ExpansionTile(
                 title: Text('HOSTEL G', style: textstyle),
@@ -1399,7 +1400,7 @@ class _hostelState extends State<hostels> {
                         Row(
                           children: [
                             Text('Capacity:   ', style: headtext),
-                            Text('222 students', style: mytext),
+                            Text('222 students', style: descctext),
                           ],
                         )
                       ],
@@ -1414,7 +1415,7 @@ class _hostelState extends State<hostels> {
             Card(
               color: Color(0xffF5F7B2),
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(50)),
+                  borderRadius: BorderRadius.circular(30)),
               elevation: 20.0,
               child: ExpansionTile(
                 title: Text('HOSTEL E', style: textstyle),
@@ -1486,7 +1487,7 @@ class _hostelState extends State<hostels> {
                         Row(
                           children: [
                             Text('Capacity:   ', style: headtext),
-                            Text('276 students', style: mytext),
+                            Text('276 students', style: descctext),
                           ],
                         )
                       ],
@@ -2241,6 +2242,66 @@ class _cafesState extends State<cafes> {
     });
   }
 
+  List<String> num = [
+    'tel:09115508001',
+    'tel:09501972435',
+    'tel:09115508001',
+    'tel:09592576576',
+    'tel:09256500064',
+    'tel:9988763722',
+  ];
+  void launche(int n) async {
+    if (n == 1) {
+      if (await canLaunch(num[0])) {
+        await launch(num[0]);
+      } else {
+        throw 'Cannot dial the number';
+      }
+    }
+    if (n == 2) {
+      if (await canLaunch(num[1])) {
+        await launch(num[1]);
+      } else {
+        throw 'Cannot dial the number';
+      }
+    }
+    if (n == 3) {
+      if (await canLaunch(num[2])) {
+        await launch(num[2]);
+      } else {
+        throw 'Cannot dial the number';
+      }
+    }
+    if (n == 4) {
+      if (await canLaunch(num[3])) {
+        await launch(num[3]);
+      } else {
+        throw 'Cannot dial the number';
+      }
+    }
+    if (n == 5) {
+      if (await canLaunch(num[4])) {
+        await launch(num[4]);
+      } else {
+        throw 'Cannot dial the number';
+      }
+    }
+    if (n == 6) {
+      if (await canLaunch(num[5])) {
+        await launch(num[5]);
+      } else {
+        throw 'Cannot dial the number';
+      }
+    }
+    if (n == 7) {
+      if (await canLaunch(num[6])) {
+        await launch(num[6]);
+      } else {
+        throw 'Cannot dial the number';
+      }
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -2248,13 +2309,80 @@ class _cafesState extends State<cafes> {
       body: ListView(
         children: [
           Container(
+            //color: Colors.white,
             height: 350.0,
-            child: Card(
-              color: Color(0xffF5F7B2),
-              margin: EdgeInsets.all(20.0),
+            margin: EdgeInsets.all(20.0),
+            child: RaisedButton(
+              onPressed: () => showDialog<String>(
+                context: context,
+                builder: (BuildContext context) => AlertDialog(
+                  backgroundColor: Color(0xffF3F2E8),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(30.0),
+                  ),
+                  title: Center(child: Text('Reviews', style: headdtext)),
+                  insetPadding: EdgeInsets.only(bottom: 100.0),
+                  content: Column(
+                    children: [
+                      ListTile(
+                        leading: FaIcon(
+                          FontAwesomeIcons.solidHeart,
+                          color: Colors.red,
+                        ),
+                        title: Text(
+                            'Nice place with hygienic food. All the dishes are at same price either 90 or 120.',
+                            style: descctext),
+                      ),
+                      ListTile(
+                        leading: FaIcon(
+                          FontAwesomeIcons.solidHeart,
+                          color: Colors.red,
+                        ),
+                        title: Text(
+                            'It is that one place on the campus which never lets you down when it comes to their classics. Their Chicken Monster Burger, Chicken Rice Bowl, Chicken Temptation Sandwich, Paneer Monster Burger and Ocean Breeze are a must try if you haven\'t already. And their Cappuccino works wonders on a cold day!',
+                            style: descctext),
+                      ),
+                      SizedBox(
+                        height: 40.0,
+                      ),
+                      ListTile(
+                        leading: Icon(Icons.call, color: Colors.red),
+                        title: RaisedButton(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(15.0),
+                          ),
+                          child: Center(
+                            child: Text('09115508001', style: descctext),
+                          ),
+                          onPressed: () async {
+                            await launche(1);
+                          },
+                          elevation: 15.0,
+                          color: Colors.yellow,
+                        ),
+                      ),
+                    ],
+                  ),
+                  actions: <Widget>[
+                    Center(
+                      child: RaisedButton(
+                        color: Colors.yellow,
+                        onPressed: () => Navigator.pop(context),
+                        child: Text('Close'),
+                        elevation: 12.0,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
               elevation: 20.0,
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20.0)),
+                borderRadius: BorderRadius.circular(40.0),
+              ),
+              color: Color(0xffF5F7B2),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
@@ -2288,12 +2416,77 @@ class _cafesState extends State<cafes> {
           ),
           Container(
             height: 350.0,
-            child: Card(
+            margin: EdgeInsets.all(20.0),
+            child: RaisedButton(
+              onPressed: () => showDialog<String>(
+                context: context,
+                builder: (BuildContext context) => AlertDialog(
+                  backgroundColor: Color(0xffF3F2E8),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(30.0),
+                  ),
+                  title: Center(child: Text('Reviews', style: headdtext)),
+                  insetPadding: EdgeInsets.only(bottom: 50.0),
+                  content: Column(
+                    children: [
+                      ListTile(
+                        leading: FaIcon(
+                          FontAwesomeIcons.solidHeart,
+                          color: Colors.red,
+                        ),
+                        title: Text(
+                            'They have a good variety of wraps and other snacks, you guys should try it. They have good taste under a good price. Also their service quality is good. The staff is almost fine but not much good. They have a great ambience and a good seating capacity too.Totally recommended.',
+                            style: descctext),
+                      ),
+                      ListTile(
+                        leading: FaIcon(
+                          FontAwesomeIcons.solidHeart,
+                          color: Colors.red,
+                        ),
+                        title: Text(
+                            'Pocket friendly cafe with superb taste must try oreo shake and wraps by the way chalupa is some mexican dish which is very good crispy doh with vegies on top of it',
+                            style: descctext),
+                      ),
+                      SizedBox(
+                        height: 40.0,
+                      ),
+                      ListTile(
+                        leading: Icon(Icons.call, color: Colors.red),
+                        title: RaisedButton(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(15.0),
+                          ),
+                          child: Center(
+                            child: Text('09501972435', style: descctext),
+                          ),
+                          onPressed: () async {
+                            await launche(2);
+                          },
+                          elevation: 15.0,
+                          color: Colors.yellow,
+                        ),
+                      ),
+                    ],
+                  ),
+                  actions: <Widget>[
+                    Center(
+                      child: RaisedButton(
+                        color: Colors.yellow,
+                        onPressed: () => Navigator.pop(context),
+                        child: Text('Close'),
+                        elevation: 12.0,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
               color: Color(0xffF5F7B2),
-              margin: EdgeInsets.all(20.0),
               elevation: 20.0,
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20.0)),
+                  borderRadius: BorderRadius.circular(40.0)),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -2328,12 +2521,59 @@ class _cafesState extends State<cafes> {
           ),
           Container(
             height: 350.0,
-            child: Card(
+            margin: EdgeInsets.all(20.0),
+            child: RaisedButton(
               color: Color(0xffF5F7B2),
-              margin: EdgeInsets.all(20.0),
               elevation: 20.0,
+              onPressed: () => showDialog<String>(
+                context: context,
+                builder: (BuildContext context) => AlertDialog(
+                  backgroundColor: Color(0xffF3F2E8),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(30.0),
+                  ),
+                  title: Center(child: Text('Reviews', style: headdtext)),
+                  insetPadding: EdgeInsets.only(bottom: 400.0),
+                  content: Column(
+                    children: [
+                      ListTile(
+                        leading: FaIcon(
+                          FontAwesomeIcons.solidHeart,
+                          color: Colors.red,
+                        ),
+                        title: Text('Nice Food', style: descctext),
+                      ),
+                      ListTile(
+                        leading: FaIcon(
+                          FontAwesomeIcons.solidHeart,
+                          color: Colors.red,
+                        ),
+                        title: Text(
+                            'Good place to eat and hang out with friends.',
+                            style: descctext),
+                      ),
+                      SizedBox(
+                        height: 40.0,
+                      ),
+                    ],
+                  ),
+                  actions: <Widget>[
+                    Center(
+                      child: RaisedButton(
+                        color: Colors.yellow,
+                        onPressed: () => Navigator.pop(context),
+                        child: Text('Close'),
+                        elevation: 12.0,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20.0)),
+                  borderRadius: BorderRadius.circular(40.0)),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -2369,12 +2609,77 @@ class _cafesState extends State<cafes> {
           ),
           Container(
             height: 350.0,
-            child: Card(
+            margin: EdgeInsets.all(20.0),
+            child: RaisedButton(
               color: Color(0xffF5F7B2),
-              margin: EdgeInsets.all(20.0),
+              onPressed: () => showDialog<String>(
+                context: context,
+                builder: (BuildContext context) => AlertDialog(
+                  insetPadding: EdgeInsets.only(bottom: 300.0),
+                  backgroundColor: Color(0xffF3F2E8),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(30.0),
+                  ),
+                  title: Center(child: Text('Reviews', style: headdtext)),
+                  content: Column(
+                    children: [
+                      ListTile(
+                        leading: FaIcon(
+                          FontAwesomeIcons.solidHeart,
+                          color: Colors.red,
+                        ),
+                        title: Text(
+                            'Great place.The best and the most reasonable food in the menu is the mumbo jumbo sandwich.Great value for money',
+                            style: descctext),
+                      ),
+                      ListTile(
+                        leading: FaIcon(
+                          FontAwesomeIcons.solidHeart,
+                          color: Colors.red,
+                        ),
+                        title: Text(
+                            'Nice place to eat and have fun with a change of taste...',
+                            style: descctext),
+                      ),
+                      SizedBox(
+                        height: 40.0,
+                      ),
+                      ListTile(
+                        leading: Icon(Icons.call, color: Colors.red),
+                        title: RaisedButton(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(15.0),
+                          ),
+                          child: Center(
+                            child: Text('09592576576', style: descctext),
+                          ),
+                          onPressed: () async {
+                            await launche(4);
+                          },
+                          elevation: 15.0,
+                          color: Colors.yellow,
+                        ),
+                      ),
+                    ],
+                  ),
+                  actions: <Widget>[
+                    Center(
+                      child: RaisedButton(
+                        color: Colors.yellow,
+                        onPressed: () => Navigator.pop(context),
+                        child: Text('Close'),
+                        elevation: 12.0,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
               elevation: 20.0,
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20.0)),
+                  borderRadius: BorderRadius.circular(40.0)),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -2409,13 +2714,78 @@ class _cafesState extends State<cafes> {
             ),
           ),
           Container(
+            margin: EdgeInsets.all(20.0),
             height: 350.0,
-            child: Card(
+            child: RaisedButton(
+              onPressed: () => showDialog<String>(
+                context: context,
+                builder: (BuildContext context) => AlertDialog(
+                  insetPadding: EdgeInsets.only(bottom: 200.0),
+                  backgroundColor: Color(0xffF3F2E8),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(30.0),
+                  ),
+                  title: Center(child: Text('Reviews', style: headdtext)),
+                  content: Column(
+                    children: [
+                      ListTile(
+                        leading: FaIcon(
+                          FontAwesomeIcons.solidHeart,
+                          color: Colors.red,
+                        ),
+                        title: Text(
+                            'Loved the place. They have live music too on different occasions which adds to the spark. Nice cozy place to eat around. Love the coolers and coffee. The pizzas there are fully self made and taste enhancers. Must visit.',
+                            style: descctext),
+                      ),
+                      ListTile(
+                        leading: FaIcon(
+                          FontAwesomeIcons.solidHeart,
+                          color: Colors.red,
+                        ),
+                        title: Text(
+                            'Pizza\'s are real tasty and cheesy. Garlic bread is equally nice. Must visit place.',
+                            style: descctext),
+                      ),
+                      SizedBox(
+                        height: 40.0,
+                      ),
+                      ListTile(
+                        leading: Icon(Icons.call, color: Colors.red),
+                        title: RaisedButton(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(15.0),
+                          ),
+                          child: Center(
+                            child: Text('09256500064', style: descctext),
+                          ),
+                          onPressed: () async {
+                            await launche(5);
+                          },
+                          elevation: 15.0,
+                          color: Colors.yellow,
+                        ),
+                      ),
+                    ],
+                  ),
+                  actions: <Widget>[
+                    Center(
+                      child: RaisedButton(
+                        color: Colors.yellow,
+                        onPressed: () => Navigator.pop(context),
+                        child: Text('Close'),
+                        elevation: 12.0,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
               color: Color(0xffF5F7B2),
-              margin: EdgeInsets.all(20.0),
               elevation: 20.0,
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20.0)),
+                  borderRadius: BorderRadius.circular(40.0)),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -2453,13 +2823,79 @@ class _cafesState extends State<cafes> {
             ),
           ),
           Container(
+            margin: EdgeInsets.all(20.0),
             height: 350.0,
-            child: Card(
+            child: RaisedButton(
+              onPressed: () => showDialog<String>(
+                context: context,
+                builder: (BuildContext context) => AlertDialog(
+                  insetPadding: EdgeInsets.only(bottom: 100.0),
+                  backgroundColor: Color(0xffF3F2E8),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(30.0),
+                  ),
+                  title: Center(child: Text('Reviews', style: headdtext)),
+                  content: Column(
+                    children: [
+                      ListTile(
+                        leading: FaIcon(
+                          FontAwesomeIcons.solidHeart,
+                          color: Colors.red,
+                        ),
+                        title: Text(
+                            'Great taste and cleaniness.It\'s cheap and has good taste.You can eat a thali in Rs 40.My pesonal favorite  here is Oreo shake which is of Rs 40 too.'
+                            'The packed and bakery products have slightly higher cost because it\'s the only shop that sells these products in COS complex. Also the bakery products  are not fresh at times.',
+                            style: descctext),
+                      ),
+                      ListTile(
+                        leading: FaIcon(
+                          FontAwesomeIcons.solidHeart,
+                          color: Colors.red,
+                        ),
+                        title: Text(
+                            'Great place for Non Vegetarian sandwiches and baked veg items.',
+                            style: descctext),
+                      ),
+                      SizedBox(
+                        height: 40.0,
+                      ),
+                      ListTile(
+                        leading: Icon(Icons.call, color: Colors.red),
+                        title: RaisedButton(
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(15.0),
+                          ),
+                          child: Center(
+                            child: Text('09988763722', style: descctext),
+                          ),
+                          onPressed: () async {
+                            await launche(6);
+                          },
+                          elevation: 15.0,
+                          color: Colors.yellow,
+                        ),
+                      ),
+                    ],
+                  ),
+                  actions: <Widget>[
+                    Center(
+                      child: RaisedButton(
+                        color: Colors.yellow,
+                        onPressed: () => Navigator.pop(context),
+                        child: Text('Close'),
+                        elevation: 12.0,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
               color: Color(0xffF5F7B2),
-              margin: EdgeInsets.all(20.0),
               elevation: 20.0,
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20.0)),
+                  borderRadius: BorderRadius.circular(40.0)),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -2495,12 +2931,58 @@ class _cafesState extends State<cafes> {
           ),
           Container(
             height: 350.0,
-            child: Card(
+            margin: EdgeInsets.all(20.0),
+            child: RaisedButton(
               color: Color(0xffF5F7B2),
-              margin: EdgeInsets.all(20.0),
+              onPressed: () => showDialog<String>(
+                context: context,
+                builder: (BuildContext context) => AlertDialog(
+                  insetPadding: EdgeInsets.only(bottom: 400.0),
+                  backgroundColor: Color(0xffF3F2E8),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(30.0),
+                  ),
+                  title: Center(child: Text('Reviews', style: headdtext)),
+                  content: Column(
+                    children: [
+                      ListTile(
+                        leading: FaIcon(
+                          FontAwesomeIcons.solidHeart,
+                          color: Colors.red,
+                        ),
+                        title: Text('Comfortable place for light snacks.',
+                            style: descctext),
+                      ),
+                      ListTile(
+                        leading: FaIcon(
+                          FontAwesomeIcons.solidHeart,
+                          color: Colors.red,
+                        ),
+                        title: Text('Always the best.', style: descctext),
+                      ),
+                      SizedBox(
+                        height: 40.0,
+                      ),
+                    ],
+                  ),
+                  actions: <Widget>[
+                    Center(
+                      child: RaisedButton(
+                        color: Colors.yellow,
+                        onPressed: () => Navigator.pop(context),
+                        child: Text('Close'),
+                        elevation: 12.0,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
               elevation: 20.0,
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20.0)),
+                  borderRadius: BorderRadius.circular(40.0)),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -2530,19 +3012,66 @@ class _cafesState extends State<cafes> {
                       color: Color(0xffF1D74D),
                     ),
                     title: Text('4.8', style: mytext),
-                  )
+                  ),
                 ],
               ),
             ),
           ),
           Container(
+            margin: EdgeInsets.all(20.0),
             height: 350.0,
-            child: Card(
+            child: RaisedButton(
+              onPressed: () => showDialog<String>(
+                context: context,
+                builder: (BuildContext context) => AlertDialog(
+                  insetPadding: EdgeInsets.only(bottom: 100.0),
+                  backgroundColor: Color(0xffF3F2E8),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(30.0),
+                  ),
+                  title: Center(child: Text('Reviews', style: headdtext)),
+                  content: Column(
+                    children: [
+                      ListTile(
+                        leading: FaIcon(
+                          FontAwesomeIcons.solidHeart,
+                          color: Colors.red,
+                        ),
+                        title: Text(
+                            'Thapar Cafeteria is a one stop place to sit and munch. It has everything from a small piece of cake to Veg Thali- it has all.'
+                            ' The taste of food is really good at reasonable prices. The service is good there and the staff is very responsive.',
+                            style: descctext),
+                      ),
+                      ListTile(
+                        leading: FaIcon(
+                          FontAwesomeIcons.solidHeart,
+                          color: Colors.red,
+                        ),
+                        title: Text(
+                            'Very typical college experience, cool 90s music and the cheese sandwich and brownie is to die for. Cheap and tasty.',
+                            style: descctext),
+                      ),
+                    ],
+                  ),
+                  actions: <Widget>[
+                    Center(
+                      child: RaisedButton(
+                        color: Colors.yellow,
+                        onPressed: () => Navigator.pop(context),
+                        child: Text('Close'),
+                        elevation: 12.0,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10.0),
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
               color: Color(0xffF5F7B2),
-              margin: EdgeInsets.all(20.0),
               elevation: 20.0,
               shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(20.0)),
+                  borderRadius: BorderRadius.circular(40.0)),
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
@@ -2656,38 +3185,667 @@ class _societiesState extends State<societies> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xffF3F2E8),
-      body: Center(
-          child: Image.asset(
-        'assets/images/error.gif',
-        fit: BoxFit.fitHeight,
-      )),
-      /* GridView.count(
-        crossAxisCount: 2,
-        childAspectRatio: 0.3,
-        crossAxisSpacing: 10.0,
-        mainAxisSpacing: 10.0,
-        children: [
-          Container(
-            child: Card(
-                child: Image.asset('assets/images/frosh.gif'), elevation: 10),
-          ),
-          Container(
-            child: Card(elevation: 10.0, child: Text('hello')),
-          ),
-          Container(
-            child: Card(elevation: 10.0, child: Text('hello')),
-          ),
-          Container(
-            child: Card(elevation: 10.0, child: Text('hello')),
-          ),
-          Container(
-            child: Card(elevation: 10.0, child: Text('hello')),
-          ),
-          Container(
-            child: Card(elevation: 10.0, child: Text('hello')),
-          ),
-        ],
-      ),*/
+      body: SafeArea(
+        child: GridView.count(
+          crossAxisCount: 2,
+          childAspectRatio: 0.7,
+          crossAxisSpacing: 10.0,
+          mainAxisSpacing: 10.0,
+          children: [
+            Container(
+              margin: EdgeInsets.all(9.0),
+              child: RaisedButton(
+                  color: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(40.0),
+                  ),
+                  //margin: EdgeInsets.all(9.0),
+                  // clipBehavior: Clip.hardEdge,
+                  onPressed: () => showDialog<String>(
+                        context: context,
+                        builder: (BuildContext context) => AlertDialog(
+                          backgroundColor: Color(0xffF3F2E8),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                          ),
+                          title: Text('Frosh Society', style: headtext),
+                          content: Text(frosh, style: desctext),
+                          actions: <Widget>[
+                            Center(
+                              child: RaisedButton(
+                                color: Colors.yellow,
+                                onPressed: () => Navigator.pop(context),
+                                child: Text('Close'),
+                                elevation: 12.0,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10.0),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                  child: Image.asset('assets/images/Frosh.jpg'),
+                  elevation: 20),
+            ),
+            Container(
+              margin: EdgeInsets.all(9.0),
+              child: RaisedButton(
+                  color: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(40.0),
+                  ),
+                  //margin: EdgeInsets.all(9.0),
+                  // clipBehavior: Clip.hardEdge,
+                  onPressed: () => showDialog<String>(
+                        context: context,
+                        builder: (BuildContext context) => AlertDialog(
+                          backgroundColor: Color(0xffF3F2E8),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                          ),
+                          title: Text('Creative Computing Society',
+                              style: headtext),
+                          content: Text(ccs, style: desctext),
+                          actions: <Widget>[
+                            Center(
+                              child: RaisedButton(
+                                color: Colors.yellow,
+                                onPressed: () => Navigator.pop(context),
+                                child: Text('Close'),
+                                elevation: 12.0,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10.0),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                  child: Image.asset('assets/images/CCS.png'),
+                  elevation: 20),
+            ),
+            Container(
+              margin: EdgeInsets.all(9.0),
+              child: RaisedButton(
+                  color: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(40.0),
+                  ),
+                  //margin: EdgeInsets.all(9.0),
+                  // clipBehavior: Clip.hardEdge,
+                  onPressed: () => showDialog<String>(
+                        context: context,
+                        builder: (BuildContext context) => AlertDialog(
+                          backgroundColor: Color(0xffF3F2E8),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                          ),
+                          title: Text('ENACTUS', style: headtext),
+                          content: Text(enac, style: desctext),
+                          actions: <Widget>[
+                            Center(
+                              child: RaisedButton(
+                                color: Colors.yellow,
+                                onPressed: () => Navigator.pop(context),
+                                child: Text('Close'),
+                                elevation: 12.0,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10.0),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                  child: Image.asset('assets/images/enactus.jpeg'),
+                  elevation: 20),
+            ),
+            Container(
+              margin: EdgeInsets.all(9.0),
+              child: RaisedButton(
+                  color: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(40.0),
+                  ),
+                  //margin: EdgeInsets.all(9.0),
+                  // clipBehavior: Clip.hardEdge,
+                  onPressed: () => showDialog<String>(
+                        context: context,
+                        builder: (BuildContext context) => AlertDialog(
+                          backgroundColor: Color(0xffF3F2E8),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                          ),
+                          title: Text('EDC', style: headtext),
+                          content: Text(edc, style: desctext),
+                          actions: <Widget>[
+                            Center(
+                              child: RaisedButton(
+                                color: Colors.yellow,
+                                onPressed: () => Navigator.pop(context),
+                                child: Text('Close'),
+                                elevation: 12.0,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10.0),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                  child: Image.asset('assets/images/edc.png'),
+                  elevation: 20),
+            ),
+            Container(
+              margin: EdgeInsets.all(9.0),
+              child: RaisedButton(
+                  color: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(40.0),
+                  ),
+                  //margin: EdgeInsets.all(9.0),
+                  // clipBehavior: Clip.hardEdge,
+                  onPressed: () => showDialog<String>(
+                        context: context,
+                        builder: (BuildContext context) => AlertDialog(
+                          backgroundColor: Color(0xffF3F2E8),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                          ),
+                          title: Text('FAPS', style: headtext),
+                          content: Text(faps, style: desctext),
+                          actions: <Widget>[
+                            Center(
+                              child: RaisedButton(
+                                color: Colors.yellow,
+                                onPressed: () => Navigator.pop(context),
+                                child: Text('Close'),
+                                elevation: 12.0,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10.0),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                  child: Image.asset('assets/images/faps.jpg'),
+                  elevation: 20),
+            ),
+            Container(
+              margin: EdgeInsets.all(9.0),
+              child: RaisedButton(
+                  color: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(40.0),
+                  ),
+                  //margin: EdgeInsets.all(9.0),
+                  // clipBehavior: Clip.hardEdge,
+                  onPressed: () => showDialog<String>(
+                        context: context,
+                        builder: (BuildContext context) => AlertDialog(
+                          backgroundColor: Color(0xffF3F2E8),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                          ),
+                          title: Text('GirlUp TIET Society', style: headtext),
+                          content: Text(gir, style: desctext),
+                          actions: <Widget>[
+                            Center(
+                              child: RaisedButton(
+                                color: Colors.yellow,
+                                onPressed: () => Navigator.pop(context),
+                                child: Text('Close'),
+                                elevation: 12.0,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10.0),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                  child: Image.asset('assets/images/girl.png'),
+                  elevation: 20),
+            ),
+            Container(
+              margin: EdgeInsets.all(9.0),
+              child: RaisedButton(
+                  color: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(40.0),
+                  ),
+                  //margin: EdgeInsets.all(9.0),
+                  // clipBehavior: Clip.hardEdge,
+                  onPressed: () => showDialog<String>(
+                        context: context,
+                        builder: (BuildContext context) => AlertDialog(
+                          backgroundColor: Color(0xffF3F2E8),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                          ),
+                          title: Text('TAAS', style: headtext),
+                          content: Text(taas, style: desctext),
+                          actions: <Widget>[
+                            Center(
+                              child: RaisedButton(
+                                color: Colors.yellow,
+                                onPressed: () => Navigator.pop(context),
+                                child: Text('Close'),
+                                elevation: 12.0,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10.0),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                  child: Image.asset('assets/images/taas.png'),
+                  elevation: 20),
+            ),
+            Container(
+              margin: EdgeInsets.all(9.0),
+              child: RaisedButton(
+                  color: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(40.0),
+                  ),
+                  //margin: EdgeInsets.all(9.0),
+                  // clipBehavior: Clip.hardEdge,
+                  onPressed: () => showDialog<String>(
+                        context: context,
+                        builder: (BuildContext context) => AlertDialog(
+                          backgroundColor: Color(0xffF3F2E8),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                          ),
+                          title: Text('TUMUN', style: headtext),
+                          content: Text(mun, style: desctext),
+                          actions: <Widget>[
+                            Center(
+                              child: RaisedButton(
+                                color: Colors.yellow,
+                                onPressed: () => Navigator.pop(context),
+                                child: Text('Close'),
+                                elevation: 12.0,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10.0),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                  child: Image.asset('assets/images/tumun.png'),
+                  elevation: 20),
+            ),
+            Container(
+              margin: EdgeInsets.all(9.0),
+              child: RaisedButton(
+                  color: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(40.0),
+                  ),
+                  //margin: EdgeInsets.all(9.0),
+                  // clipBehavior: Clip.hardEdge,
+                  onPressed: () => showDialog<String>(
+                        context: context,
+                        builder: (BuildContext context) => AlertDialog(
+                          backgroundColor: Color(0xffF3F2E8),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                          ),
+                          title: Text('Adventure Club', style: headtext),
+                          content: Text(adc, style: desctext),
+                          actions: <Widget>[
+                            Center(
+                              child: RaisedButton(
+                                color: Colors.yellow,
+                                onPressed: () => Navigator.pop(context),
+                                child: Text('Close'),
+                                elevation: 12.0,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10.0),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                  child: Image.asset('assets/images/adc.png'),
+                  elevation: 20),
+            ),
+            Container(
+              margin: EdgeInsets.all(9.0),
+              child: RaisedButton(
+                  color: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(40.0),
+                  ),
+                  //margin: EdgeInsets.all(9.0),
+                  // clipBehavior: Clip.hardEdge,
+                  onPressed: () => showDialog<String>(
+                        context: context,
+                        builder: (BuildContext context) => AlertDialog(
+                          backgroundColor: Color(0xffF3F2E8),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                          ),
+                          title: Text('Toastmasters Club', style: headtext),
+                          content: Text(tos, style: desctext),
+                          actions: <Widget>[
+                            Center(
+                              child: RaisedButton(
+                                color: Colors.yellow,
+                                onPressed: () => Navigator.pop(context),
+                                child: Text('Close'),
+                                elevation: 12.0,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10.0),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                  child: Image.asset('assets/images/tos.png'),
+                  elevation: 20),
+            ),
+            Container(
+              margin: EdgeInsets.all(9.0),
+              child: RaisedButton(
+                  color: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(40.0),
+                  ),
+                  //margin: EdgeInsets.all(9.0),
+                  // clipBehavior: Clip.hardEdge,
+                  onPressed: () => showDialog<String>(
+                        context: context,
+                        builder: (BuildContext context) => AlertDialog(
+                          backgroundColor: Color(0xffF3F2E8),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                          ),
+                          title:
+                              Text('Developer Student Club', style: headtext),
+                          content: Text(dsc, style: desctext),
+                          actions: <Widget>[
+                            Center(
+                              child: RaisedButton(
+                                color: Colors.yellow,
+                                onPressed: () => Navigator.pop(context),
+                                child: Text('Close'),
+                                elevation: 12.0,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10.0),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                  child: Image.asset('assets/images/DSC.png'),
+                  elevation: 20),
+            ),
+            Container(
+              margin: EdgeInsets.all(9.0),
+              child: RaisedButton(
+                  color: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(40.0),
+                  ),
+                  //margin: EdgeInsets.all(9.0),
+                  // clipBehavior: Clip.hardEdge,
+                  onPressed: () => showDialog<String>(
+                        context: context,
+                        builder: (BuildContext context) => AlertDialog(
+                          backgroundColor: Color(0xffF3F2E8),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                          ),
+                          title: Text('TIET Fitness Club', style: headtext),
+                          content: Text(tfc, style: desctext),
+                          actions: <Widget>[
+                            Center(
+                              child: RaisedButton(
+                                color: Colors.yellow,
+                                onPressed: () => Navigator.pop(context),
+                                child: Text('Close'),
+                                elevation: 12.0,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10.0),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                  child: Image.asset('assets/images/TFC.png'),
+                  elevation: 20),
+            ),
+            Container(
+              margin: EdgeInsets.all(9.0),
+              child: RaisedButton(
+                  color: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(40.0),
+                  ),
+                  //margin: EdgeInsets.all(9.0),
+                  // clipBehavior: Clip.hardEdge,
+                  onPressed: () => showDialog<String>(
+                        context: context,
+                        builder: (BuildContext context) => AlertDialog(
+                          backgroundColor: Color(0xffF3F2E8),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                          ),
+                          title: Text('Dance Club NOX', style: headtext),
+                          content: Text(nox, style: desctext),
+                          actions: <Widget>[
+                            Center(
+                              child: RaisedButton(
+                                color: Colors.yellow,
+                                onPressed: () => Navigator.pop(context),
+                                child: Text('Close'),
+                                elevation: 12.0,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10.0),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                  child: Image.asset('assets/images/nox.png'),
+                  elevation: 20),
+            ),
+            Container(
+              margin: EdgeInsets.all(9.0),
+              child: RaisedButton(
+                  color: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(40.0),
+                  ),
+                  //margin: EdgeInsets.all(9.0),
+                  // clipBehavior: Clip.hardEdge,
+                  onPressed: () => showDialog<String>(
+                        context: context,
+                        builder: (BuildContext context) => AlertDialog(
+                          backgroundColor: Color(0xffF3F2E8),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                          ),
+                          title: Text('TEDx TIET', style: headtext),
+                          content: Text(tedx, style: desctext),
+                          actions: <Widget>[
+                            Center(
+                              child: RaisedButton(
+                                color: Colors.yellow,
+                                onPressed: () => Navigator.pop(context),
+                                child: Text('Close'),
+                                elevation: 12.0,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10.0),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                  child: Image.asset('assets/images/tedx.png'),
+                  elevation: 20),
+            ),
+            Container(
+              margin: EdgeInsets.all(9.0),
+              child: RaisedButton(
+                  color: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(40.0),
+                  ),
+                  //margin: EdgeInsets.all(9.0),
+                  // clipBehavior: Clip.hardEdge,
+                  onPressed: () => showDialog<String>(
+                        context: context,
+                        builder: (BuildContext context) => AlertDialog(
+                          backgroundColor: Color(0xffF3F2E8),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                          ),
+                          title: Text('ACM', style: headtext),
+                          content: Text(acm, style: desctext),
+                          actions: <Widget>[
+                            Center(
+                              child: RaisedButton(
+                                color: Colors.yellow,
+                                onPressed: () => Navigator.pop(context),
+                                child: Text('Close'),
+                                elevation: 12.0,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10.0),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                  child: Image.asset('assets/images/acm.png'),
+                  elevation: 20),
+            ),
+            Container(
+              margin: EdgeInsets.all(9.0),
+              child: RaisedButton(
+                  color: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(40.0),
+                  ),
+                  //margin: EdgeInsets.all(9.0),
+                  // clipBehavior: Clip.hardEdge,
+                  onPressed: () => showDialog<String>(
+                        context: context,
+                        builder: (BuildContext context) => AlertDialog(
+                          backgroundColor: Color(0xffF3F2E8),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                          ),
+                          title: Text('Rotaract Club', style: headtext),
+                          content: Text(rot, style: desctext),
+                          actions: <Widget>[
+                            Center(
+                              child: RaisedButton(
+                                color: Colors.yellow,
+                                onPressed: () => Navigator.pop(context),
+                                child: Text('Close'),
+                                elevation: 12.0,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10.0),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                  child: Image.asset('assets/images/rot.png'),
+                  elevation: 20),
+            ),
+            Container(
+              margin: EdgeInsets.all(9.0),
+              child: RaisedButton(
+                  color: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(40.0),
+                  ),
+                  //margin: EdgeInsets.all(9.0),
+                  // clipBehavior: Clip.hardEdge,
+                  onPressed: () => showDialog<String>(
+                        context: context,
+                        builder: (BuildContext context) => AlertDialog(
+                          backgroundColor: Color(0xffF3F2E8),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                          ),
+                          title: Text('OWASP', style: headtext),
+                          content: Text(ows, style: desctext),
+                          actions: <Widget>[
+                            Center(
+                              child: RaisedButton(
+                                color: Colors.yellow,
+                                onPressed: () => Navigator.pop(context),
+                                child: Text('Close'),
+                                elevation: 12.0,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10.0),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                  child: Image.asset('assets/images/owsp.png'),
+                  elevation: 20),
+            ),
+            Container(
+              margin: EdgeInsets.all(9.0),
+              child: RaisedButton(
+                  color: Colors.white,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(40.0),
+                  ),
+                  //margin: EdgeInsets.all(9.0),
+                  // clipBehavior: Clip.hardEdge,
+                  onPressed: () => showDialog<String>(
+                        context: context,
+                        builder: (BuildContext context) => AlertDialog(
+                          backgroundColor: Color(0xffF3F2E8),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(30.0),
+                          ),
+                          title: Text('Microsoft Student Chapter',
+                              style: headtext),
+                          content: Text(msc, style: desctext),
+                          actions: <Widget>[
+                            Center(
+                              child: RaisedButton(
+                                color: Colors.yellow,
+                                onPressed: () => Navigator.pop(context),
+                                child: Text('Close'),
+                                elevation: 12.0,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10.0),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                  child: Image.asset('assets/images/msc.png'),
+                  elevation: 20),
+            ),
+          ],
+        ),
+      ),
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.shifting,
         items: <BottomNavigationBarItem>[
@@ -2725,30 +3883,35 @@ class _loadingState extends State<loading> {
   void myfunc() async {
     if (_selectedIndex == 0) {
       Future.delayed(Duration(milliseconds: 1000), () {
+        Navigator.pop(context);
         Navigator.push(
             context, MaterialPageRoute(builder: (context) => hostels()));
       });
     }
     if (_selectedIndex == 1) {
       Future.delayed(Duration(milliseconds: 1000), () {
+        Navigator.pop(context);
         Navigator.push(
             context, MaterialPageRoute(builder: (context) => study()));
       });
     }
     if (_selectedIndex == 2) {
       Future.delayed(Duration(milliseconds: 1000), () {
+        Navigator.pop(context);
         Navigator.push(
             context, MaterialPageRoute(builder: (context) => home()));
       });
     }
     if (_selectedIndex == 3) {
       Future.delayed(Duration(milliseconds: 1000), () {
+        Navigator.pop(context);
         Navigator.push(
             context, MaterialPageRoute(builder: (context) => cafes()));
       });
     }
     if (_selectedIndex == 4) {
       Future.delayed(Duration(milliseconds: 1000), () {
+        Navigator.pop(context);
         Navigator.push(
             context, MaterialPageRoute(builder: (context) => societies()));
       });
@@ -2764,5 +3927,28 @@ class _loadingState extends State<loading> {
           color: Colors.red,
           duration: Duration(milliseconds: 1000),
         ));
+  }
+}
+
+class back extends StatefulWidget {
+  @override
+  _backState createState() => _backState();
+}
+
+class _backState extends State<back> {
+  Future<bool> onbackpress() async {
+    return true;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return WillPopScope(
+      onWillPop: onbackpress,
+      child: Scaffold(
+        appBar: AppBar(
+          title: Text("my_eaxmple"),
+        ),
+      ),
+    );
   }
 }
